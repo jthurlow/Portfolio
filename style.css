@@ -1,0 +1,63 @@
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("hero8.jpg");
+
+    /* Set a specific height */
+
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 1915px;
+    height: 1093.68px;
+    max-height: none;
+    max-width: none;
+    z-index: -999999;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+
+    /* Position and center the image to scale nicely on all screens */
+    
+}
+
+/* Place text in the middle of the image */
+.intro {
+        position: absolute;
+        font: 290% 'Dosis', sans-serif;
+        font-weight: 200;
+        font-size: 290%;
+        letter-spacing: 30px;
+        text-align: center;
+        color: #fff;
+        margin-left: 36%;
+        /*margin-right: auto;*/
+        top: 48%;
+}
+
+.intro2{
+        
+    font: 190% 'Dosis', sans-serif;
+        font-weight: 200;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        margin-left: 39%;
+        top: 55%;
+    
+
+}
+
+
+
+
+  
