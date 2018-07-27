@@ -3,42 +3,61 @@
     <head>
         <meta charset="utf-8">
         <title> Jabin Thomas</title>
-
         <!-- CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- JQuery scripts -->
+        <script>
+            $(document).ready(function(){
+                
+                $("#home").click(function(){
+                    $("#about-section").hide()
+                    $("#home-section").show()
+                }) 
+    
+                $("#about").click(function(){
+                    $("#about-section").removeAttr('hidden').show();
+                    $("#home-section").hide()
+                }) 
+            });
+        </script>
     </head>
 
     <body>
-        
-        
         <!--Main image (hero section) with title and intro-->
           <div class="hero-image">
-            <div class="intro"> JABIN THOMAS</div>
-            <div class="intro2">Front-end developer & creative UI designer</div>
+              <div class="main">
+
+                <!-- Nav bar -->
+                     <ul class="nav">
+                         <li id="home">Home</li>
+                         <li id="about">About</li>
+                         <li ><a href="https://cms-assets.tutsplus.com/uploads/users/23/posts/21219/image/how-to-make-a-resume-on-google-docs-1.jpg" target="_blank">Resume</a></li>
+                     </ul>
+
+                  <!-- Home section -->
+                  <section class="home"  id="home-section" >
+                          <h1>Jabin Thomas</h1>
+                          <h2>Front-end developer & creative UI designer</h2>
+                  </section>
+
+                  <!-- About section -->
+                  <section class="about" id="about-section" hidden>
+                        <h1>About me</h1>
+                        <h2> </h2>
+                        <p style="text-align: center">I'm a software developer & professional musican  with eperience in Front-end and mobile development. I love<br> creating using my skill-set to tell visual stories. I am fluent in C++ Java Java Script Python HTML5 CSS JQuery.<br> I belive true artistic expression brings users / obsevers on the journey to experience fully what is on display.</p>
+                        
+                </section>
+    
+              </div>
          </div>
-
-         <!--banner under hero section-->
-         <div class="banner">
-             
-
-
-
-         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </body>
-
 </html>
